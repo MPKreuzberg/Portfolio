@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igor Fabris Portfolio</title>
+    <link rel="stylesheet" href="main.css" >
+    
+  </head>
+  <body class="body transform">
+ <nav class="navbar">
+      <input type="button" class="button" onclick="toggleTheme()" id="button" value="Day / Night"></input>
+      <!-- <ul>
+        <li>Home</li>
+          <li>Who am i?</li>
+          <li>Why me?</li>
+          <li>Technologies</li>
+      </ul> -->
+    </nav>
+
+    <div class="all">
+      <div class="imgcontainer">
+        <div class="text">
+          <div class="first" id=first>
+            <p>
+              Hi! I am Igor Fabris. A software engineer and web designer based
+              in Berlin.
+            </p>
+            <div class="second" id="second">
+              <p>
+                I help businesses and companies reach their goals by designing
+                user-centric Web Sites & interactive experiences.
+              </p>
+            </div>
+          </div>
+
+          <div class="img">
+            <img src="img/Igor.png" class="img" alt="Igor " width="400px" />
+          </div>
+        </div>
+      </div>
+      <div class="rest">
+        <div class="hire night">
+          <h2>Who am i ?</h2>
+          <p>
+            I'm Igor Fabris. I am located in Berlin. For 35 years I worked in
+            the entertainment industry in the field of graphic design, audio and
+            video production. I have been awarded many times for my work at the
+            world level. I decided to change my profession during the Covid
+            situation when my industry lost its job completely. As a former
+            programmer (20 years and more ago) I decided to dive into water
+            programmers again and now I’m here. In addition to Web pages, I also
+            produce content that should appear on them. I have extensive
+            experience in the production of audio and video content and graphic
+            design. As a former owner of one of the largest multimedia companies
+            in Croatia, I gained extensive experience in teamwork and learned
+            how to be part of a good team. I am a good collaborator but I have
+            my own opinion and knowledge that supports it. I always follow the
+            latest trends and try to be up-to-date with everything that is
+            happening in the industry. I am available at work 0-24 24/7 if
+            needed. I am a big fan of books in any form. I spend my free time
+            with my family, I walk at least 15 km every day or I go on long bike
+            rides.
+          </p>
+          <h2>Why to hire me ?</h2>
+          <p>
+            It's simple. I am a one stop solution for web design and website
+            programming including audio and video content. Give me an idea or a
+            vision and sleep well. The rest is on me. Fast and accurate
+            communication, problem-solving ability and more. I am also a video
+            editor, 3D composer and audio engineer. I prefer remote work and
+            freelancing, but I know how to be part of a team. Impossible does
+            not exist in my dictionary ...
+          </p>
+          <!-- <div class="techno">
+                  <h3>Technologies</h3>
+                  <img src="img/html.png" alt="HTML logo">
+                  <img src="img/css-3.png" alt="HTML logo">
+                  <img src="img/java-script.png" alt="HTML logo">
+              </div> -->
+        </div>
+        <div class="specials night">
+          <h2>My special features:</h2>
+          <h3>Web design:</h3>
+          <p>
+            CSS coding, fast learning, quick adaptation to new tasks and I
+            listen carefully to what is being said to me. After Java Script I
+            plan to master PHP and Rust.
+          </p>
+          <h3>Web content production:</h3>
+          <p>
+            Music composing, arranging, and producing, vocal recording and
+            editing motion graphic design video design, graphic design, video
+            editing. Specialised in podcast production. Software compatibility:
+            Audio: Steinberg Nuendo, Ableton Live, Logic Pro X, Pro Tools
+            (verified knowledge for all) Video: Abobe After Effects (verified
+            knowledge), Grass Walley Edius, Maxxon Cinema 4D, Blender. Desktop
+            graphics: Adobe Photoshop, , Affinity Photo and Designer, Gimp.
+          </p>
+
+          <h2>My work:</h2>
+          <p><a class="night" href="">Croatia_tourism_website</a></p>
+          <p><a class="night" href="">Fabris Audio studio</a></p>
+        </div>
+        <!-- <div class="work night">
+          <p>My work:</p>
+          <p>2022</p>
+          <p>
+            <a href="https://daliborkoenig.github.io/Croatia_tourism_website/"
+              ><img src="img/Croatia.png" target=_blank alt="Croatia"
+            /></a>
+          </p>
+          <p>2022</p>
+          <p>
+            <a href="#"><img src="img/Fabrisaudio.png" alt="FabrisAudio" /></a>
+          </p>
+          <p>2022</p>
+          <p>
+            <a href="#"><img src="img/Jeff Mills.png" alt="Jeff Mills" /></a>
+          </p>
+        </div> -->
+        <div class="form night">
+          <h2>Contact</h2>
+          <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="canada">Austria</option>
+              <option value="croatia">Croatia</option>
+              <option value="slovenia">Slovenia</option>
+              <option value="germany">Germany</option>
+              <option value="italy">Italy</option>
+              <option value="france">France</option>
+              <option value="unitedkingdom">United Kingdom</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>Copyright: Igor Fabris 2022</footer>
+  </body>
+</html>
