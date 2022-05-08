@@ -5,12 +5,12 @@
 // font-family: 'Roboto', sans-serif;
 
 $darkgrey: #666666;
-$olivegreen: #93ac93;
+$olivegreen: #9cc5a1;
 $hovergreen: #4e704e;
 $lightgrey: #4a4a4a;
 $lightgreyfont: #8f8f8f;
 $bodynight: hsla(0, 0%, 0%, 0.803);
-$dayactive: rgb(41, 41, 41);
+$dayactive: rgb(35, 35, 35);
 $dayactive2: rgb(240, 240, 240);
 $daybody: rgb(226, 226, 226);
 $mainfont: "Roboto", sans-serif;
@@ -22,10 +22,10 @@ $numbers: "Baloo 2", sans serif;
   box-sizing: border-box;
 }
 .body {
-  background-image: url("img/Vecteezy_Techno-Background_BA1220.jpg");
+  background-image: url("img/mytchnobckgnd.jpg");
   backdrop-filter: blur(3px) saturate(10%) grayscale(50%) brightness(20%);
-  
-  background-size: cover ;
+
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -34,17 +34,18 @@ $numbers: "Baloo 2", sans serif;
   top: 0;
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   background-color: $lightgrey;
   padding: 0.5em;
   width: 100%;
   z-index: 10;
-  i{
-    padding-left: 2em;
-    font-size: 1rem;
-    font-weight: 700;
-    color:$daybody ;
-    
-  }
+  
+}
+i {
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: $daybody;
 }
 @mixin bgColor() {
   background-color: #666666;
@@ -163,18 +164,15 @@ $numbers: "Baloo 2", sans serif;
   margin-bottom: 1.5em;
   font-family: $mainfont;
   box-shadow: 2px 5px 30px #66666652;
-
-  .hire,
+.hire,
   p,
   h2,
   h3 {
-    padding: 1em;
-  }
-  h3 {
-    padding-left: 1em;
-    padding-bottom: 0;
+    padding: 1rem;
   }
 }
+
+
 
 .form {
   padding: 1em;
@@ -219,7 +217,21 @@ $numbers: "Baloo 2", sans serif;
   .link {
     text-decoration: none;
   }
-  
+  .techno {
+    margin-top: 2rem;
+    display: flex;
+    }
+   
+}
+.logotechno:hover{
+  filter: drop-shadow(2px 2px 5px $olivegreen);
+  transition: 0.5s;
+}
+.check {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 footer {
