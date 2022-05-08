@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Igor Fabris Portfolio</title>
     <link rel="stylesheet" href="main.css" >
-    
+    <script src="https://kit.fontawesome.com/820ff1e752.js" crossorigin="anonymous"></script>
   </head>
   <body class="body transform">
  <nav class="navbar">
       <input type="button" class="button" onclick="toggleTheme()" id="button" value="Day / Night"></input>
+      <i class="fa-solid fa-code"> User-Centric Button !</i>
+      
       <!-- <ul>
         <li>Home</li>
           <li>Who am i?</li>
@@ -99,36 +101,22 @@
             graphics: Adobe Photoshop, , Affinity Photo and Designer, Gimp.
           </p>
 
-          <h2>My work:</h2>
-          <p><a class="night" href="">Croatia_tourism_website</a></p>
-          <p><a class="night" href="">Fabris Audio studio</a></p>
+          <div class="work">
+            <h2>My work:</h2>
+            <p><a class="night link" href="https://mpkreuzberg.github.io/CRO-tourists-site/" target="_blank">Croatia Tourists Website</a></p>
+            <p><a class="night link" href="https://mpkreuzberg.github.io/NewSiteTraining/" target="_blank">Fabris Audio Studio</a></p>
+          </div>
         </div>
-        <!-- <div class="work night">
-          <p>My work:</p>
-          <p>2022</p>
-          <p>
-            <a href="https://daliborkoenig.github.io/Croatia_tourism_website/"
-              ><img src="img/Croatia.png" target=_blank alt="Croatia"
-            /></a>
-          </p>
-          <p>2022</p>
-          <p>
-            <a href="#"><img src="img/Fabrisaudio.png" alt="FabrisAudio" /></a>
-          </p>
-          <p>2022</p>
-          <p>
-            <a href="#"><img src="img/Jeff Mills.png" alt="Jeff Mills" /></a>
-          </p>
-        </div> -->
+       
         <div class="form night">
           <h2>Contact</h2>
-          <form action="action_page.php">
+          <form action="mailto:fabrisigor01@gmail.com">
             <label for="fname">First Name</label>
             <input
               type="text"
               id="fname"
-              name="firstname"
-              placeholder="Your name.."
+              name="firstname" reqired
+              placeholder="Your name.." 
             />
             <label for="lname">Last Name</label>
             <input
@@ -136,6 +124,13 @@
               id="lname"
               name="lastname"
               placeholder="Your last name.."
+            />
+            <label for="lname">email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email here (required)" required
             />
             <label for="country">Country</label>
             <select id="country" name="country">

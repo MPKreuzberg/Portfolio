@@ -15,12 +15,25 @@
 }
 
 .navbar {
-  position: fixed;
-  display: inline-block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   background-color: #4a4a4a;
   padding: 0.5em;
   width: 100%;
   z-index: 10;
+}
+
+.navbar i {
+  padding-left: 2em;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e2e2e2;
 }
 
 .button {
@@ -210,6 +223,10 @@
   padding: 2em;
   gap: 1em;
   width: 100%;
+}
+
+.rest .link {
+  text-decoration: none;
 }
 
 footer {

@@ -30,12 +30,21 @@ $numbers: "Baloo 2", sans serif;
 }
 
 .navbar {
-  position: fixed;
-  display: inline-block;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: nowrap;
   background-color: $lightgrey;
   padding: 0.5em;
   width: 100%;
   z-index: 10;
+  i{
+    padding-left: 2em;
+    font-size: 1rem;
+    font-weight: 700;
+    color:$daybody ;
+    
+  }
 }
 @mixin bgColor() {
   background-color: #666666;
@@ -207,6 +216,10 @@ $numbers: "Baloo 2", sans serif;
   padding: 2em;
   gap: 1em;
   width: 100%;
+  .link {
+    text-decoration: none;
+  }
+  
 }
 
 footer {
